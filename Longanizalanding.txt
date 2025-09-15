@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longanizas de Chillán | El Secreto del Asado Perfecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1200x800/a35d3c/333333?text=Asado+%C3%89pico');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            box-shadow: 0 5px 15px rgba(255, 107, 5, 0.4);
+        }
+        .value-stack-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #FF6B05;
+        }
+        /* Style for the social proof popup */
+        #social-proof-popup {
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        #social-proof-popup.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg py-20 md:py-32 text-center">
+        <div class="container mx-auto px-6">
+            <span class="text-orange-400 font-bold uppercase tracking-wider">EXCLUSIVO DE CHILLÁN A TU PARRILLA</span>
+            <h1 class="text-4xl md:text-6xl font-black mt-4 leading-tight">Deja de Improvisar con tus Asados y Conviértete en el Héroe de la Parrilla</h1>
+            <p class="text-lg md:text-2xl mt-6 max-w-3xl mx-auto text-gray-300">Descubre el sabor artesanal que hará que tu familia y amigos te aplaudan. El auténtico sabor de Chillán, directo a tu mesa, con todo lo que necesitas para un asado inolvidable.</p>
+            <a href="#comprar" class="cta-button mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl py-4 px-10 rounded-lg transition-transform transform hover:scale-105">
+                SÍ, QUIERO MI PACK AHORA
+                <span class="block text-sm font-normal">¡Despacho Express!</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">¿Cansado de la Misma Longaniza de Supermercado?</h2>
+            <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 mb-8"></div>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400">
+                Esa que se desarma en la parrilla, llena de grasa y con un sabor industrial que arruina el momento. Inviertes tiempo, dinero y esfuerzo en el asado del fin de semana para terminar con una decepción. <strong class="text-white">Tu familia merece algo mejor. Tú mereces el verdadero sabor.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SOLUTION & PRICING SECTION -->
+    <section id="comprar" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black">Elige el Pack Perfecto Para Ti</h2>
+                <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">Tenemos una opción para cada tipo de parrillero, desde el que prueba por primera vez hasta el maestro anfitrión.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:gap-4">
+                
+                <!-- Option 1: Básico -->
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 h-full flex flex-col">
+                    <h3 class="text-2xl font-bold text-center">Pack de Prueba</h3>
+                    <p class="text-center text-gray-400 text-sm mb-6">Para probar el auténtico sabor</p>
+                    <p class="text-5xl font-black text-center my-4">$10.000</p>
+                    <ul class="space-y-4 text-gray-300 flex-grow mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong class="text-white">1kg de Auténtica Longaniza de Chillán</strong></span>
+                        </li>
+                    </ul>
+                    <a href="#pago" class="mt-auto text-center w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-6 rounded-lg transition-colors">
+                        Pedir 1kg
+                    </a>
+                </div>
+
+                <!-- Option 2: Popular -->
+                <div class="bg-gray-800 p-8 rounded-lg border-2 border-orange-500 relative transform lg:scale-110 shadow-2xl h-full flex flex-col">
+                    <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full">MÁS POPULAR</span>
+                    <h3 class="text-3xl font-bold text-center">Pack Maestro Parrillero</h3>
+                    <p class="text-center text-gray-400 text-sm mb-6">La mejor opción para el asado del fin de semana</p>
+                    <p class="text-6xl font-black text-center my-4 text-green-400">$24.000</p>
+                    <p class="text-center text-gray-400 -mt-4 mb-6">(Solo $8.000 por kg)</p>
+                    <ul class="space-y-4 text-gray-300 flex-grow mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong class="text-white">3kg de Auténtica Longaniza de Chillán</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Guía PDF: "Los 5 Secretos del Asado" <strong class="text-white">(GRATIS)</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Recetario PDF: 5 Acompañamientos Express <strong class="text-white">(GRATIS)</strong></span>
+                        </li>
+                    </ul>
+                    <a href="#pago" class="cta-button mt-auto text-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl py-5 px-8 rounded-lg transition-transform transform hover:scale-105">
+                        ¡Quiero el Pack Popular!
+                    </a>
+                </div>
+
+                <!-- Option 3: Experto -->
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 h-full flex flex-col">
+                    <h3 class="text-2xl font-bold text-center">Pack Experto</h3>
+                     <p class="text-center text-gray-400 text-sm mb-6">Para eventos o verdaderos fanáticos</p>
+                    <p class="text-5xl font-black text-center my-4">$80.000</p>
+                     <p class="text-center text-gray-400 -mt-4 mb-6">(Ahorra $20.000)</p>
+                    <ul class="space-y-4 text-gray-300 flex-grow mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong class="text-white">10kg de Auténtica Longaniza de Chillán</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Guía PDF: "Los 5 Secretos del Asado" <strong class="text-white">(GRATIS)</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Recetario PDF: 5 Acompañamientos Express <strong class="text-white">(GRATIS)</strong></span>
+                        </li>
+                    </ul>
+                    <a href="#pago" class="mt-auto text-center w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-6 rounded-lg transition-colors">
+                        Pedir 10kg
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- URGENCY SECTION -->
+    <section class="bg-yellow-400 text-gray-900 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-black">¡ATENCIÓN! PRODUCCIÓN ARTESANAL LIMITADA</h3>
+            <p class="text-xl mt-2">Para garantizar la máxima calidad, nuestra producción es exclusiva: <strong class="underline">solo 50 packs por semana.</strong></p>
+            
+            <div class="mt-6 bg-gray-900 text-white max-w-md mx-auto p-4 rounded-lg shadow-lg">
+                <p class="text-2xl font-bold">¡Apúrate! Quedan solo:</p>
+                <p class="text-6xl font-black my-2 text-yellow-400"><span id="stock-counter">50</span></p>
+                <p class="text-2xl font-bold">packs para el despacho de esta semana.</p>
+            </div>
+
+            <div class="mt-8 text-2xl font-bold" id="countdown">
+                Esta oferta termina en: <span class="bg-red-600 text-white py-2 px-3 rounded-lg" id="timer"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Parrilleros que ya se transformaron en Héroes</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <p class="text-gray-300">"¡Sin exagerar, las mejores longanizas que he probado! El sabor ahumado es increíble. Mi familia quedó fascinada en el asado del domingo. 100% recomendado."</p>
+                    <p class="font-bold mt-4 text-orange-400">- Carlos R., Concepción</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <p class="text-gray-300">"Se nota el sabor artesanal y la calidad de la carne. Nada que ver con las del supermercado. El despacho fue súper rápido. Ya encargué mi segundo pack."</p>
+                    <p class="font-bold mt-4 text-orange-400">- Javiera Soto, Santiago</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <p class="text-gray-300">"La guía PDF me dio un par de trucos que no conocía y que marcaron la diferencia. Se pasaron. Un producto de calidad y además te ayudan a lucirte."</p>
+                    <p class="font-bold mt-4 text-orange-400">- Matías Vega, Talca</p>
+                </div>
+                 <!-- Testimonio 4 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <p class="text-gray-300">"Compré el pack de 10kg para una celebración y fue un éxito rotundo. Todos me preguntaron de dónde eran. La calidad es de otro nivel. Cliente fiel desde ahora."</p>
+                    <p class="font-bold mt-4 text-orange-400">- Francisca P., Chillán</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & UPSELL SECTION -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black">Conoce a los Artesanos del Sabor</h2>
+                <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">Más que un negocio, somos una tradición familiar directo del corazón del Mercado de Chillán.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center items-center">
+                <!-- Image 1: Local -->
+                <div>
+                    <img src="https://placehold.co/600x400/5c3a2b/ffffff?text=Tu+Local+en+el+Mercado" alt="Local comercial en el mercado de Chillán" class="rounded-lg shadow-lg mb-4 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold">Visítanos en el Mercado</h3>
+                    <p class="text-gray-400">[Tu dirección o número de local].</p>
+                </div>
+                <!-- Image 2: Longanizas al vacío -->
+                <div>
+                    <img src="https://placehold.co/600x400/8b5a3e/ffffff?text=Longanizas+Selladas" alt="Longanizas selladas al vacío" class="rounded-lg shadow-lg mb-4 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold">Frescura Garantizada</h3>
+                    <p class="text-gray-400">Sellamos al vacío para que el sabor de Chillán llegue intacto a tu parrilla.</p>
+                </div>
+                <!-- Image 3: Costillar -->
+                <div class="bg-gray-800 p-6 rounded-lg border-2 border-dashed border-orange-500">
+                    <img src="https://placehold.co/600x400/a35d3c/ffffff?text=Nuestro+Costillar+Ahumado" alt="Costillar ahumado" class="rounded-lg shadow-lg mb-4 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-orange-400">¡Y pregunta por nuestro Costillar!</h3>
+                    <p class="text-gray-400">Un ahumado artesanal que se deshace en la boca. <strong class="text-white">Pídelo por WhatsApp.</strong> ¡Es un secreto fuera de la web!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FINAL CTA -->
+    <section class="bg-orange-500 py-16 text-white" id="pago">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black">¿Listo para ser el Próximo Héroe del Asado?</h2>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">Elige tu pack y asegura el sabor auténtico de Chillán en tu próxima parrilla. No dejes pasar la oportunidad.</p>
+            <a href="#comprar" class="mt-8 inline-block bg-white text-orange-600 font-bold text-2xl py-5 px-12 rounded-lg transition-transform transform hover:scale-105 shadow-2xl">
+                ¡Elige tu Pack y Pídelo AHORA!
+            </a>
+            <p class="mt-4 text-orange-100">¡Quedan pocos packs disponibles para esta semana!</p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <footer class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-10">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-lg">¿Cómo funciona el despacho?</h3>
+                    <p class="text-gray-400 mt-1">Realizamos despachos express a [Tu Zona/Ciudad]. Una vez hecho el pedido, nos contactaremos contigo para coordinar la entrega en menos de 48 horas.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">¿Qué métodos de pago aceptan?</h3>
+                    <p class="text-gray-400 mt-1">Aceptamos transferencia bancaria y Mercado Pago.</p>
+                </div>
+                 <div>
+                    <h3 class="font-bold text-lg">¿Qué pasa si tengo un problema con mi pedido?</h3>
+                    <p class="text-gray-400 mt-1">Tu satisfacción es nuestra prioridad. Si bien estamos seguros de que te encantará el producto, ante cualquier problema con la entrega o el estado del pedido, contáctanos de inmediato y buscaremos una solución contigo.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12 text-gray-500">
+                <p>&copy; 2025 Longanizas de Chillán [Tu Marca]. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Social Proof Popup -->
+    <div id="social-proof-popup" class="fixed bottom-5 left-5 bg-gray-800 border border-orange-500 text-white p-4 rounded-lg shadow-lg transform translate-x-[-200%] opacity-0 z-50 max-w-xs">
+        <div class="flex items-center">
+            <svg class="w-6 h-6 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <div>
+                <p class="text-sm font-bold"><span id="popup-name"></span> de <span id="popup-city"></span></p>
+                <p class="text-xs text-gray-300" id="popup-action"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Countdown Timer ---
+        function startCountdown() {
+            const countdownElement = document.getElementById('timer');
+            if (!countdownElement) return;
+
+            let countdownTime = sessionStorage.getItem('countdownTime');
+            if (!countdownTime || new Date().getTime() > countdownTime) {
+                // AJUSTE: Cambiado a 5 minutos
+                countdownTime = new Date().getTime() + 5 * 60 * 1000;
+                sessionStorage.setItem('countdownTime', countdownTime);
+            }
+
+            const interval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countdownTime - now;
+
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "00:00";
+                } else {
+                    countdownElement.innerHTML = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                }
+            }, 1000);
+        }
+
+        // --- Stock Counter and Social Proof ---
+        let stockCount;
+        const stockCounterElement = document.getElementById('stock-counter');
+
+        const socialProofData = {
+            names: ["Javier", "Catalina", "Benjamín", "Sofía", "Martín", "Isidora", "Vicente", "Florencia", "Agustín", "Emilia"],
+            cities: ["Santiago", "Concepción", "Valparaíso", "La Serena", "Temuco", "Antofagasta", "Rancagua", "Talca", "Arica"],
+            actions: [
+                "acaba de comprar un Pack Maestro Parrillero.",
+                "acaba de pedir un Pack Experto.",
+                "acaba de llevar un Pack de Prueba.",
+                "recién compró el Pack Maestro Parrillero."
+            ]
+        };
+
+        function showSocialProof() {
+            const popup = document.getElementById('social-proof-popup');
+            if (!popup) return;
+
+            // Disminuir el stock cada vez que aparece un popup
+            if (stockCount > 5) { // No bajar de 5 para mantener realismo
+                stockCount--;
+                sessionStorage.setItem('stockCount', stockCount);
+                if(stockCounterElement) {
+                    stockCounterElement.textContent = stockCount;
+                }
+            }
+
+            const { names, cities, actions } = socialProofData;
+
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomCity = cities[Math.floor(Math.random() * cities.length)];
+            const randomAction = actions[Math.floor(Math.random() * actions.length)];
+
+            document.getElementById('popup-name').textContent = randomName;
+            document.getElementById('popup-city').textContent = randomCity;
+            document.getElementById('popup-action').textContent = randomAction;
+
+            popup.classList.add('show');
+            
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 5000);
+        }
+
+        function scheduleNextPopup() {
+            showSocialProof();
+            const randomInterval = Math.floor(Math.random() * (20000 - 9000 + 1)) + 9000; 
+            setTimeout(scheduleNextPopup, randomInterval);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            startCountdown();
+
+            // Inicializar el contador de stock desde la memoria de sesión o en 50
+            stockCount = sessionStorage.getItem('stockCount') ? parseInt(sessionStorage.getItem('stockCount')) : 50;
+            if(stockCounterElement) {
+                stockCounterElement.textContent = stockCount;
+            }
+
+            setTimeout(scheduleNextPopup, 7000); 
+        });
+    </script>
+
+</body>
+</html>
+
